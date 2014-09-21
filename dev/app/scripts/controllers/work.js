@@ -10,4 +10,5 @@
 angular.module('johnPettigrewApp')
   .controller('WorkCtrl', function ($scope) {
   	$('#back').show();
+  	$('#back').addClass('slide');
   });

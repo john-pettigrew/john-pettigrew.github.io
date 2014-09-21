@@ -10,4 +10,5 @@
 angular.module('johnPettigrewApp')
   .controller('ContactCtrl', function ($scope) {
   	$('#back').show();
+  	$('#back').addClass('slide');
   });
