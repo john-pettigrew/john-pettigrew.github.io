@@ -29,23 +29,14 @@
     
     <div class="container">
       <div class="row">
-        <ul id="scene">
-          <li class="layer" data-depth="0.10">
-              <div id="pageContent" style="display:none">
-                <a href="/#/" id="back">
-                  <span class="ion-ios7-arrow-left"></span>
-                </a>
-                <h1 id="title">John Pettigrew</h1>
-                <hr style="margin-top:-6pt;">
-              <div ng-view=""></div>
-            </div>
-            <div id="welcome">
-              <h1>Welcome.</h1>
-            </div>
-          </li>
-        </ul>
+        <a href="/#/" id="back">
+          <span class="ion-ios7-arrow-left"></span>
+        </a>
+        <h1 id="title">John Pettigrew</h1>
+        <hr style="margin-top:-6pt;">
       </div>
-    </div>
+        <div ng-view=""></div>
+      </div>
 
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
@@ -88,10 +79,5 @@
         <script src="scripts/controllers/style.js"></script>
         <script src="scripts/controllers/contact.js"></script>
         <!-- endbuild -->
-    <script type="text/javascript" src="../lib/parallax/deploy/parallax.min.js"></script>
-    <script>
-      var scene = document.getElementById('scene');
-      var parallax = new Parallax(scene);
-    </script>
 </body>
 </html>

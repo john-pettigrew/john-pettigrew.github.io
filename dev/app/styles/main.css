@@ -4,10 +4,10 @@ html{
 }
 body{
   height: 100%;
-  background-image: url('../images/noisy_grid/noisy_grid.png');  
+  background-image: url('../images/low_contrast_linen/low_contrast_linen.png');  
 }
 h1, h2, h3, h4, h5, h6{
-  color:black;
+  color:white;
   font-family: 'Raleway', sans-serif;
 }
 h3{
@@ -17,7 +17,7 @@ hr{
   border-color: grey;
 }
 a:link, a:active, a:visited, a:hover{
-    color:black;
+    color:white;
 }
 .icon{
   text-align: center;
@@ -45,6 +45,7 @@ a:link, a:active, a:visited, a:hover{
 }
 #title{
   margin-bottom:0px;
+  margin-right: 5px;
   text-align:right;
 }
 #me{
