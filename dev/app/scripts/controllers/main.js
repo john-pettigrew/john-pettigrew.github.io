@@ -8,7 +8,10 @@
  * Controller of the johnPettigrewApp
  */
 angular.module('johnPettigrewApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('MainCtrl', function ($scope, $location) {
   	$('#back').hide();
   	$('#back').removeClass('slide');
+  	$scope.leaveMain = function(view){
+  		$location.path(view);
+  	}
   });

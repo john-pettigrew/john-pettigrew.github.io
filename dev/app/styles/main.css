@@ -21,6 +21,7 @@ a:link, a:active, a:visited, a:hover{
 }
 .icon{
   text-align: center;
+  color:white;
 }
 
 .icon span{
@@ -43,6 +44,14 @@ a:link, a:active, a:visited, a:hover{
   animation-duration: .5s;
   animation-name: slide;
 }
+.fadeOut{
+  animation-duration: .5s;
+  animation-name: fadeOut;
+}
+.fadeIn{
+  animation-duration: .5s;
+  animation-name: fadeIn;
+}
 #title{
   margin-bottom:0px;
   margin-right: 5px;
@@ -59,5 +68,23 @@ a:link, a:active, a:visited, a:hover{
   }
   to{
     margin-left: 1%;
+  }
+}
+@keyframes fadeOut{
+  from{
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+    display: none;
+  }
+}
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+    display: block;
+  }
+  to{
+    opacity: 1;
   }
 }
