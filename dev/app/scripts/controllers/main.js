@@ -20,7 +20,7 @@ angular.module('johnPettigrewApp')
   	var startAnimations = function(){
   		//expand box
   		$('#box').css('display', 'block');
-  		$('#box').addClass('box');
+  		//$('#box').addClass('box');
   		setTimeout(displayContent, 2000);
   	}
 
