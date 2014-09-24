@@ -29,21 +29,26 @@
     
     <div class="container">
       <div class="row">
-        <ul id="scene">
-          <li class="layer" data-depth="0.10">
-              <div id="pageContent" style="display:none">
-                <a href="/#/" id="back">
-                  <span class="ion-ios7-arrow-left"></span>
-                </a>
-                <h1 id="title">John Pettigrew</h1>
-                <hr style="margin-top:-6pt;">
-                <div ng-view=""></div>
-              </div>
-            </div>
-          </li>
-        </ul>
+        <a href="/#/" id="back">
+          <span class="ion-ios7-arrow-left"></span>
+        </a>
+        <h1 id="title">John Pettigrew</h1>
+        <hr style="margin-top:-6pt;">
       </div>
-    </div>
+        <div ng-view=""></div>
+      </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
 
     <!-- build:js(.) scripts/oldieshim.js -->
     <!--[if lt IE 9]>
@@ -74,10 +79,5 @@
         <script src="scripts/controllers/style.js"></script>
         <script src="scripts/controllers/contact.js"></script>
         <!-- endbuild -->
-    <script type="text/javascript" src="../lib/parallax/deploy/parallax.min.js"></script>
-    <script>
-      var scene = document.getElementById('scene');
-      var parallax = new Parallax(scene);
-    </script>
 </body>
 </html>

@@ -23,7 +23,6 @@ a:link, a:active, a:visited, a:hover{
 }
 .icon{
   text-align: center;
-  color:white;
 }
 
 .icon span{
@@ -42,10 +41,20 @@ a:link, a:active, a:visited, a:hover{
   padding-right: 20px;
   display: none;
 }
+.pageContent{
+}
+#box{
+  border: 5px solid green; 
+  margin-top:1%;
+  display:none;
+  padding-left: 1%;
+  padding-right: 1%;
+}
 .slide{
   animation-duration: .5s;
   animation-name: slide;
 }
+<<<<<<< HEAD
 .fadeOut{
   animation-duration: .5s;
   animation-name: fadeOut;
@@ -55,6 +64,8 @@ a:link, a:active, a:visited, a:hover{
   animation-duration: .5s;
   animation-name: fadeIn;
 }
+=======
+>>>>>>> parent of f7cbddc... Change the way pages are navigated for animations later.
 #title{
   margin-bottom:0px;
   margin-right: 5px;
@@ -65,6 +76,12 @@ a:link, a:active, a:visited, a:hover{
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.box{
+  animation-duration: 2s;
+  animation-name: expand;
+  height: auto;
+  width:100%;
+}
 @keyframes slide{
   from{
     margin-left: 100%;
@@ -73,6 +90,7 @@ a:link, a:active, a:visited, a:hover{
     margin-left: 1%;
   }
 }
+<<<<<<< HEAD
 @keyframes fadeOut{
   from{
     opacity: 1;
@@ -92,3 +110,19 @@ a:link, a:active, a:visited, a:hover{
 
   }
 }
+@keyframes expand{
+  0%{
+    height:0;
+    width:0;
+  }
+  50%{
+    height:0;
+    width:100%;
+  }
+  100%{
+    height: auto;
+    width:100%;
+  }
+}
+=======
+>>>>>>> parent of f7cbddc... Change the way pages are navigated for animations later.

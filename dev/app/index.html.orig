@@ -29,16 +29,30 @@
     
     <div class="container">
       <div class="row">
+<<<<<<< HEAD
+        <ul id="scene" style="list-style-type:none; padding-left:0;">
+          <li class="layer" data-depth="0.8">
+            <div id="box" class="center-block" style="display:none;">
+              <div class="pageContent" style="">
+=======
         <ul id="scene">
           <li class="layer" data-depth="0.10">
               <div id="pageContent" style="display:none">
+>>>>>>> parent of f7cbddc... Change the way pages are navigated for animations later.
                 <a href="/#/" id="back">
                   <span class="ion-ios7-arrow-left"></span>
                 </a>
                 <h1 id="title">John Pettigrew</h1>
                 <hr style="margin-top:-6pt;">
+<<<<<<< HEAD
                 <div ng-view=""></div>
               </div>
+=======
+              <div ng-view=""></div>
+            </div>
+            <div id="welcome">
+              <h1>Welcome.</h1>
+>>>>>>> parent of f7cbddc... Change the way pages are navigated for animations later.
             </div>
           </li>
         </ul>
@@ -74,7 +88,7 @@
         <script src="scripts/controllers/style.js"></script>
         <script src="scripts/controllers/contact.js"></script>
         <!-- endbuild -->
-    <script type="text/javascript" src="../lib/parallax/deploy/parallax.min.js"></script>
+    <script type="text/javascript" src="../lib/parallax/deploy/parallax.js"></script>
     <script>
       var scene = document.getElementById('scene');
       var parallax = new Parallax(scene);

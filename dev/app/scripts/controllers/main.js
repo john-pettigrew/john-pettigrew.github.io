@@ -8,24 +8,7 @@
  * Controller of the johnPettigrewApp
  */
 angular.module('johnPettigrewApp')
-  .controller('MainCtrl', function ($scope, $location) {
-  	$scope.leaveMain = function(view){
-  		$location.path(view);
-  	}
-  	var displayContent = function(){
-  		console.log('test');
-  		$('#pageContent').css('display', 'block');
-  		$('#pageContent').addClass('fadeIn');
-  	}
-  	var startAnimations = function(){
-  		//expand box
-  		$('#box').css('display', 'block');
-  		//$('#box').addClass('box');
-  		setTimeout(displayContent, 2000);
-  	}
-
-  	//Remove back arrow
+  .controller('MainCtrl', function ($scope) {
   	$('#back').hide();
   	$('#back').removeClass('slide');
-  	startAnimations();
   });
