@@ -29,8 +29,6 @@
     
     <div class="container">
       <div class="row">
-        <ul id="scene" style="padding-left:0px;">
-          <li class="layer" data-depth="0.40">
               <div id="pageContent" style="">
                 <a href="/#/" id="back">
                   <span class="ion-ios7-arrow-left"></span>
@@ -40,8 +38,6 @@
                 <div ng-view=""></div>
               </div>
             </div>
-          </li>
-        </ul>
       </div>
     </div>
 
@@ -74,12 +70,10 @@
         <script src="scripts/controllers/style.js"></script>
         <script src="scripts/controllers/contact.js"></script>
         <!-- endbuild -->
-    <script type="text/javascript" src="../lib/parallax/deploy/parallax.min.js"></script>
+    <script type="text/javascript" src="lib/parallax/deploy/parallax.min.js"></script>
     <script>
-        if(screen.width <= 760){
-            var scene = document.getElementById('scene');
-            var parallax = new Parallax(scene);
-        }
+      var scene = document.getElementById('scene');
+      var parallax = new Parallax(scene);
     </script>
 </body>
 </html>
