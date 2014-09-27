@@ -1,14 +1,13 @@
 html{
-  height: 100%;
+  min-height: 100%;
 }
 body{
-  height: 100%;
   background-image: url('../images/blur2.png');  
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: right center;
   background-size: cover;
   overflow-x: hidden; 
-  overflow-y: hidden; 
+  min-height: 100%;
 }
 h1, h2, h3, h4, h5, h6{
   color:white;
@@ -30,7 +29,7 @@ a:link, a:active, a:visited, a:hover{
 }
 
 .icon span{
-  font-size: 42pt;
+  font-size: 32pt;
 }
 .icon a{
   text-decoration: none;
@@ -50,24 +49,22 @@ a:link, a:active, a:visited, a:hover{
   animation-duration: .5s;
   animation-name: slide;
 }
-.fadeOut{
-  animation-duration: .5s;
-  animation-name: fadeOut;
-}
-.fadeIn{
-  visibility: visible;
-  animation-duration: .5s;
-  animation-name: fadeIn;
-}
 #title{
   margin-bottom:0px;
   margin-right: 5px;
   text-align:right;
 }
 #me{
+  padding-right: 0px;
+}
+#me img{
   border: 2px solid black;
   margin-top: 10px;
   margin-bottom: 10px;
+  width:100%;
+}
+#navigation-list{
+  padding-left:0px;
 }
 @keyframes slide{
   from{
@@ -75,5 +72,10 @@ a:link, a:active, a:visited, a:hover{
   }
   to{
     margin-left: 1%;
+  }
+}
+@media (min-width: 768px){
+  #me img{
+    width: 30%;
   }
 }
