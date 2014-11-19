@@ -86,10 +86,17 @@ a:link, a:active, a:visited, a:hover{
   }
 }
 @keyframes slide{
-  from{
+  0%{
     margin-left: 100%;
+    opacity: 0;   
   }
-  to{
+  25%{
+    opacity: 0;
+  }
+  75%{
+    opacity: 1;
+  }
+  100%{
     margin-left: 1%;
   }
 }
