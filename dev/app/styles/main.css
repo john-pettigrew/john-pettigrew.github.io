@@ -1,17 +1,16 @@
+/*Background pattern from subtlepatterns.com*/
 html{
   min-height: 100%;
   min-width: 100%;
 }
 body{
-  background-image: url('../images/blur2.png');
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: cover;
+  background-image: url('../images/dark_wood/dark_wood.png');
+  background-repeat: repeat;
   overflow-x: hidden;
   min-height: 100%;
   min-width: 100%;
 }
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6, p{
   color:white;
   font-family: 'Raleway', sans-serif;
 }
@@ -64,15 +63,27 @@ a:link, a:active, a:visited, a:hover{
   margin-top: 10px;
   margin-bottom: 10px;
   width:100%;
+  border-radius:100%;
+
 }
 .content{
   text-align:center;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(97, 100, 117, 0.34);
   border-radius: 15px;
 }
 .page.ng-enter{
   animation-duration: .5s;
   animation-name: page-appear;
+}
+.zoom{
+  animation-duration: .5s;
+  animation-name: zoom;
+}
+.modal, .modal-dialog, .modal-content{
+  margin-top: 0%;
+  margin-bottom: 0%;
+  min-width: 100%;
+  min-height: 100%;
 }
 #navigation-list{
   padding-left:0px;
@@ -88,7 +99,7 @@ a:link, a:active, a:visited, a:hover{
 @keyframes slide{
   0%{
     margin-left: 100%;
-    opacity: 0;   
+    opacity: 0;
   }
   25%{
     opacity: 0;
@@ -100,6 +111,14 @@ a:link, a:active, a:visited, a:hover{
     margin-left: 1%;
   }
 }
+@keyframes zoom{
+  from{
+    transform: scale(0)
+  }
+  to{
+    transform: scale(1)
+  }
+}
 @media (min-width: 768px){
   #me img{
     width: 30%;
@@ -107,5 +126,10 @@ a:link, a:active, a:visited, a:hover{
   #navigation-list{
     margin-top:5%;
     margin-left:1.5%
+  }
+}
+@media (max-width: 768px){
+  #me img{
+    margin-top:25%;
   }
 }
