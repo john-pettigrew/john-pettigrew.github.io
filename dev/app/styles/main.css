@@ -36,7 +36,7 @@ a:link, a:active, a:visited, a:hover{
   text-decoration: none;
 
 }
-#back{
+.back{
   font-size: 48px;
   text-align: left;
   position: absolute;
@@ -44,13 +44,12 @@ a:link, a:active, a:visited, a:hover{
   margin-top:-0.5em;
   padding-left: 20px;
   padding-right: 20px;
-  display: none;
 }
 .slide{
   animation-duration: .5s;
   animation-name: slide;
 }
-#title{
+.title{
   margin-bottom:0px;
   margin-right: 5px;
   text-align:right;
@@ -75,10 +74,11 @@ a:link, a:active, a:visited, a:hover{
   animation-duration: .5s;
   animation-name: page-appear;
 }
-.zoom{
+.modal.in .modal-dialog{
   animation-duration: .5s;
   animation-name: zoom;
 }
+
 .modal, .modal-dialog, .modal-content{
   margin-top: 0%;
   margin-bottom: 0%;
