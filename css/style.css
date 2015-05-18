@@ -1,0 +1,100 @@
+body{
+  background-color: #000000;
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin-top: 10%;
+}
+h1{
+  font-size: 3em;
+}
+
+.blur{
+  animation-duration: 1s;
+  animation-name: blur-animation;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: blur-animation;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation-duration: 1s;
+  -moz-animation-name: blur-animation;
+  -moz-animation-fill-mode: forwards;
+
+  -o-animation-duration: 1s;
+  -o-animation-name: blur-animation;
+  -o-animation-fill-mode: forwards;
+}
+
+.blur-delayed{
+  animation-delay: 1s;
+  animation-duration: 1s;
+  animation-name: blur-animation;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-delay: 1s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: blur-animation;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation-delay: 1s;
+  -moz-animation-duration: 1s;
+  -moz-animation-name: blur-animation;
+  -moz-animation-fill-mode: forwards;
+
+  -o-animation-delay: 1s;
+  -o-animation-duration: 1s;
+  -o-animation-name: blur-animation;
+  -o-animation-fill-mode: forwards;
+}
+
+@keyframes blur-animation{
+  from{
+    filter: blur(6px);
+    color: #000000;
+    text-shadow: 0px 0px 7px #FFFFFF;
+  }
+  to{
+    filter: blur(0px);
+    color: #FFFFFF;
+    text-shadow: 0px 0px 0px #FFFFFF;
+  }
+}
+
+@-webkit-keyframes blur-animation{
+  from{
+    -webkit-filter: blur(6px);
+    color: #000000;
+  }
+  to{
+    filter: blur(0px);
+    color: #FFFFFF;
+  }
+}
+
+@-moz-keyframes blur-animation{
+  from{
+    filter: blur(6px);
+    color: #000000;
+    text-shadow: 0px 0px 7px #FFFFFF;
+  }
+  to{
+    filter: blur(0px);
+    color: #FFFFFF;
+    text-shadow: 0px 0px 0px #FFFFFF;
+  }
+}
+
+@-o-keyframes blur-animation{
+  from{
+    filter: blur(6px);
+    color: #000000;
+    text-shadow: 0px 0px 7px #FFFFFF;
+  }
+  to{
+    filter: blur(0px);
+    color: #FFFFFF;
+    text-shadow: 0px 0px 0px #FFFFFF;
+  }
+}
