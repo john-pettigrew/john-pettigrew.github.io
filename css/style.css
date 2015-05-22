@@ -5,11 +5,9 @@ body{
   text-align: center;
   margin-top: 10%;
 }
-h1{
-  font-size: 3em;
-}
 
-.blur{
+.main-content{
+
   animation-duration: 1s;
   animation-name: blur-animation;
   animation-fill-mode: forwards;
@@ -27,7 +25,8 @@ h1{
   -o-animation-fill-mode: forwards;
 }
 
-.blur-delayed{
+.content{
+
   animation-delay: 1s;
   animation-duration: 1s;
   animation-name: blur-animation;
