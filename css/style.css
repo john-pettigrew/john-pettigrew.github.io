@@ -5,6 +5,32 @@ body{
   text-align: center;
   margin-top: 10%;
 }
+.social-icons{
+  font-size: 2em;
+  color: #000000;
+  padding-left: 1%;
+  padding-right: 1%;
+
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-name: blur-animation;
+  animation-fill-mode: forwards;
+
+  -webkit-animation-delay: 2s;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-name: blur-animation;
+  -webkit-animation-fill-mode: forwards;
+
+  -moz-animation-delay: 2s;
+  -moz-animation-duration: 1s;
+  -moz-animation-name: blur-animation;
+  -moz-animation-fill-mode: forwards;
+
+  -o-animation-delay: 2s;
+  -o-animation-duration: 1s;
+  -o-animation-name: blur-animation;
+  -o-animation-fill-mode: forwards;
+}
 
 .main-content{
 
