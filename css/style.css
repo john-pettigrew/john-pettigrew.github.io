@@ -1,16 +1,18 @@
 body{
   background-color: #000000;
-  color: #000000;
+  color: #FFFFFF;
   font-family: 'Raleway', sans-serif;
   text-align: center;
   margin-top: 10%;
+
 }
 a{
   text-decoration: none;
 }
 .social-icons{
+  opacity: 0;
   font-size: 2em;
-  color: #000000;
+  color: #FFFFFF;
   padding-left: 1%;
   padding-right: 1%;
 
@@ -36,6 +38,8 @@ a{
 }
 
 .main-content{
+  opacity: 0;
+  padding-bottom: 2px;
 
   animation-duration: 1s;
   animation-name: blur-animation;
@@ -55,7 +59,7 @@ a{
 }
 
 .content{
-
+  opacity: 0;
   animation-delay: 1s;
   animation-duration: 1s;
   animation-name: blur-animation;
@@ -80,12 +84,12 @@ a{
 @keyframes blur-animation{
   from{
     filter: blur(6px);
-
+    opacity: 0;
     text-shadow: 0px 0px 7px #FFFFFF;
   }
   to{
     filter: blur(0px);
-
+    opacity: 1;
     text-shadow: 0px 0px 0px #FFFFFF;
   }
 }
@@ -93,23 +97,25 @@ a{
 @-webkit-keyframes blur-animation{
   from{
     -webkit-filter: blur(6px);
-
+    opacity: 0;
+    text-shadow: 0px 0px 7px #FFFFFF;
   }
   to{
-    filter: blur(0px);
-
+    -webkit-filter: blur(0px);
+    opacity: 1;
+    text-shadow: 0px 0px 0px #FFFFFF;
   }
 }
 
 @-moz-keyframes blur-animation{
   from{
     filter: blur(6px);
-    color: #000000;
+    opacity: 0;
     text-shadow: 0px 0px 7px #FFFFFF;
   }
   to{
     filter: blur(0px);
-    color: #FFFFFF;
+    opacity: 1;
     text-shadow: 0px 0px 0px #FFFFFF;
   }
 }
@@ -117,12 +123,12 @@ a{
 @-o-keyframes blur-animation{
   from{
     filter: blur(6px);
-    color: #000000;
+    opacity: 0;
     text-shadow: 0px 0px 7px #FFFFFF;
   }
   to{
     filter: blur(0px);
-    color: #FFFFFF;
+    opacity: 1;
     text-shadow: 0px 0px 0px #FFFFFF;
   }
 }
