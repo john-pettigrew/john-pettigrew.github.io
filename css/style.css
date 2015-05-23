@@ -5,6 +5,9 @@ body{
   text-align: center;
   margin-top: 10%;
 }
+a{
+  text-decoration: none;
+}
 .social-icons{
   font-size: 2em;
   color: #000000;
@@ -77,12 +80,12 @@ body{
 @keyframes blur-animation{
   from{
     filter: blur(6px);
-    color: #000000;
+
     text-shadow: 0px 0px 7px #FFFFFF;
   }
   to{
     filter: blur(0px);
-    color: #FFFFFF;
+
     text-shadow: 0px 0px 0px #FFFFFF;
   }
 }
@@ -90,11 +93,11 @@ body{
 @-webkit-keyframes blur-animation{
   from{
     -webkit-filter: blur(6px);
-    color: #000000;
+
   }
   to{
     filter: blur(0px);
-    color: #FFFFFF;
+
   }
 }
 
