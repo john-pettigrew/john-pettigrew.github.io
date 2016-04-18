@@ -1,0 +1,3 @@
+[submodule "script/conways-game-of-life"]
+	path = script/conways-game-of-life
+	url = https://github.com/john-pettigrew/conways-game-of-life.git
