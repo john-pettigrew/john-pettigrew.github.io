@@ -25,7 +25,10 @@
       <i class="ci-clevyr-icon social-icons"></i>
     </a>
 
-
-
+    <canvas id="game" style="z-index:-1; position: absolute; top:0; left:0;"></canvas>
+    <script src="script/conways-game-of-life/model.js"></script>
+    <script src="script/conways-game-of-life/view.js"></script>
+    <script src="script/conways-game-of-life/controller.js"></script>
+    <script>new ConwayController();</script>
   </body>
 </html>
