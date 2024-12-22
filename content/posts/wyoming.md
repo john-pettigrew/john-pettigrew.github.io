@@ -48,18 +48,16 @@ The message also has a "data_length" and a "payload_length" field which are the 
 {
     "type": "audio-chunk",
     "data_length": 42,
-    "payload_length": 1024
+    "payload_length": 1024,
+    "data": {
+        "rate": 22050,
+        "width": 2,
+        "channels": 1
+    }
 }
 ```
 
-The optional "data" message in this example would contain metadata about the audio, like the audio rate, width, and number of channels. This is important since it actually describes _how_ to play the audio. This is also needed if you want to later convert that PCM audio into something more typical like "wav" or "mp3". It would look something like this:
-```json
-{
-    "rate": 22050,
-    "width": 2,
-    "channels": 1
-}
-```
+The "data" field in this example contains metadata about the audio like the audio rate, width, and number of channels. This is important since it actually describes _how_ to play the audio. This is also needed if you want to later convert that PCM audio into something more typical like "wav" or "mp3". However, this "data" field is not the same as the "data" referenced by "data_length" and sent after the message. So be careful to not mix those up like I did.
 
 Finally, the optional payload is sent. If you are generating audio with Piper, this is the actual PCM audio.
 Audio being sent will start with an "audio-start" message type to signal some audio is going to be sent. Then multiple "audio-chunk" messages are sent with the actual audio. Finally, an "audio-stop" message is sent to signal that all of the audio was sent. 
@@ -128,11 +126,11 @@ The header is broken up into 3 sections here. The "RIFF" section is the main hea
 ## Results
 Now I can just run this command to generate audio for my project:
 ```shell
-    go run commands/tts.go -addr 'my_piper_server:10200' -text 'Hello world' --output_file './hello.wav'
+    wyoming-cli tts -addr 'my_piper_server:10200' -text 'Hello world' --output_file './hello.wav'
 ```
 or run this to stream the audio directly to my speakers:
 ```shell
-    go run commands/tts.go -addr 'my_piper_server:10200' -text 'Hello world' --output-raw | aplay -r 22050 -f S16_LE -t raw -
+    wyoming-cli tts -addr 'my_piper_server:10200' -text 'Hello world' --output-raw | aplay -r 22050 -f S16_LE -t raw -
 ```
 Without needing to run another instance of Piper. Mission accomplished!
 
