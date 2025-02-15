@@ -2,3 +2,7 @@ baseURL: https://john-pettigrew.github.io/
 languageCode: en-us
 title: "🔮 Merlin's Beard"
 theme: ["PaperMod"]
+params:
+  homeInfoParams:
+    Title: "🧙‍♂️ Hello!"
+    Content: "You've reached the personal blog of **John Pettigrew**, a software developer in Oklahoma City. Checkout some [posts](/posts) I've written and my [github](https://github.com/john-pettigrew)."
