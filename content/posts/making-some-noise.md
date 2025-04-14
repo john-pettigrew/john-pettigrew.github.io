@@ -29,7 +29,7 @@ Generating these values is super easy with numpy:
         dtype=np.short
     )
 ```
-Here, the `min_value` and `max_value` are the lowest and highest int16 value, respectively. Next, these values just need to be written to a wave file with a valid header. Python's `wave` library makes this super easy since I don't need to create the header manually like I did for [my post on creating wyoming-cli](/posts/wyoming-2.md).
+Here, the `min_value` and `max_value` are the lowest and highest int16 value, respectively. Next, these values just need to be written to a wave file with a valid header. Python's `wave` library makes this super easy since I don't need to create the header manually like I did for [my post on creating wyoming-cli](/posts/wyoming-2/).
 
 ## Fourier Transforms
 Next, to create some of the other types of noise. One easy method is to just take the white noise I generated and modify the different frequency's amplitudes using fourier transforms. Again, numpy to the rescue. 
